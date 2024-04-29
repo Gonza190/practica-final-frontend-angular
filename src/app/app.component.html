@@ -1,0 +1,27 @@
+<app-navbar />
+<div class="grid md:grid-cols-12 p-6">
+  <div class="md:col-span-9">
+    <div class="flex">
+      <div class="mr-4">
+        <app-category-modal (addCategoryEvent)="addCategory($event)" />
+      </div>
+      <div>
+        <app-product-modal />
+      </div>
+    </div>
+
+    <app-accordion-group
+      [categories]="categories"
+      [products]="products"
+      (addToCartEvent)="addToCart($event)"
+    />
+  </div>
+  <div class="md:col-span-3">
+    <app-cart
+      [content]="productsOnCart"
+      [total]="total"
+      (deleteFromCartEvent)="deleteFromCart($event)"
+      (handleOrderEvent)="handleOrder()"
+    />
+  </div>
+</div>

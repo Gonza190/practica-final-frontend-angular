@@ -1,0 +1,31 @@
+<div class="border border-gray-300 rounded-md">
+  <div
+    class="flex items-center justify-between px-4 py-2 cursor-pointer bg-slate-200 hover:bg-slate-400"
+    (click)="toggleAccordion()"
+  >
+    <h2 class="text-2xl font-semibold">
+      {{ name }}
+    </h2>
+    <i
+      class="fas fa-chevron-down"
+      [class.fa-chevron-up]="isOpen"
+      style="font-size: 1.2rem !important"
+    ></i>
+  </div>
+  <div *ngIf="isOpen" class="px-4 py-2">
+    <div class="p-4 bg-white grid grid-cols-3 gap-4">
+      <div *ngFor="let product of products; let i = index">
+        <app-card
+          [imagePath]="
+            product.id > 30 ? product.imagen : IMG_URL + product.imagen
+          "
+          [title]="product.nombre + ' - ' + product.artista"
+          [prize]="product.precio"
+          [stock]="product.stock"
+          [id]="product.id"
+          (addToCartEventCard)="addToCart($event)"
+        />
+      </div>
+    </div>
+  </div>
+</div>

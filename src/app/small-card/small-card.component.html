@@ -1,0 +1,27 @@
+<div class="max-w-xs px-10">
+  <div class="bg-white rounded-lg shadow-md">
+    <img
+      [src]="IMG_URL + imagePath"
+      [alt]="title"
+      class="rounded-2xl w-full p-3"
+    />
+    <div class="p-4 flex flex-col items-center">
+      <h2 class="text-xl font-semibold mb-2 text-center">{{ title }}</h2>
+      <p class="text-green-700 text-xl font-semibold px-2 text-center">
+        {{ prize.toFixed(2) }} €
+      </p>
+      <p class="text-gray-700 text-l font-medium px-2 text-center">
+        Stock: {{ stock }}
+      </p>
+      <p class="text-gray-700 text-sm font-normal px-2 text-center">
+        Código: {{ id }}
+      </p>
+      <button
+        class="bg-slate-200 hover:bg-slate-400 p-2 my-2 flex rounded-l"
+        (click)="deleteFromCart(id)"
+      >
+        <p class="px-2">Eliminar de la cesta</p>
+      </button>
+    </div>
+  </div>
+</div>

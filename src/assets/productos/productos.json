@@ -1,0 +1,274 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "categoria": "Hip-Hop",
+      "nombre": "Graduation",
+      "artista": "Kanye West",
+      "precio": 14.99,
+      "stock": 2,
+      "imagen": "graduation.jpg"
+    },
+    {
+      "id": "2",
+      "categoria": "Hip-Hop",
+      "nombre": "Late Registration",
+      "artista": "Kanye West",
+      "precio": 9.99,
+      "stock": 2,
+      "imagen": "late-registration.jpg"
+    },
+    {
+      "id": "3",
+      "categoria": "Hip-Hop",
+      "nombre": "All Eyez on Me",
+      "artista": "2Pac",
+      "precio": 9.99,
+      "stock": 4,
+      "imagen": "Alleyezonme.jpg"
+    },
+    {
+      "id": "4",
+      "categoria": "Hip-Hop",
+      "nombre": "Loyal to the Game",
+      "artista": "2Pac",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "lttg_.jpg"
+    },
+    {
+      "id": "5",
+      "categoria": "Hip-Hop",
+      "nombre": "Good Kid, M.A.A.D City",
+      "artista": "Kendrick Lamar",
+      "precio": 9.99,
+      "stock": 1,
+      "imagen": "gkmc.jpg"
+    },
+    {
+      "id": "6",
+      "categoria": "Hip-Hop",
+      "nombre": "DAMN",
+      "artista": "Kendrick Lamar",
+      "precio": 9.99,
+      "stock": 2,
+      "imagen": "damn.jpg"
+    },
+    {
+      "id": "7",
+      "categoria": "Hip-Hop",
+      "nombre": "IGOR",
+      "artista": "Tyler, The Creator",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "igor.jpg"
+    },
+    {
+      "id": "8",
+      "categoria": "Hip-Hop",
+      "nombre": "Mm Food",
+      "artista": "MF DOOM",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "mmfood_.jpg"
+    },
+    {
+      "id": "9",
+      "categoria": "Hip-Hop",
+      "nombre": "Operation: Doomsday",
+      "artista": "MF DOOM",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "od.jpg"
+    },
+    {
+      "id": "10",
+      "categoria": "Punk",
+      "nombre": "Combat Rock",
+      "artista": "The Clash",
+      "precio": 9.99,
+      "stock": 2,
+      "imagen": "cr.jpg"
+    },
+    {
+      "id": "11",
+      "categoria": "Punk",
+      "nombre": "London Calling",
+      "artista": "The Clash",
+      "precio": 9.99,
+      "stock": 1,
+      "imagen": "lc.jpg"
+    },
+    {
+      "id": "12",
+      "categoria": "Punk",
+      "nombre": "American Psycho",
+      "artista": "Misfits",
+      "precio": 9.99,
+      "stock": 5,
+      "imagen": "ap.jpg"
+    },
+    {
+      "id": "13",
+      "categoria": "Punk",
+      "nombre": "Ramones",
+      "artista": "Ramones",
+      "precio": 9.99,
+      "stock": 6,
+      "imagen": "r.jpg"
+    },
+    {
+      "id": "14",
+      "categoria": "Punk",
+      "nombre": "Rocket to Russia",
+      "artista": "Ramones",
+      "precio": 9.99,
+      "stock": 4,
+      "imagen": "rtr.jpg"
+    },
+    {
+      "id": "15",
+      "categoria": "Rock",
+      "nombre": "The Colour And The Shape",
+      "artista": "Foo Fighters",
+      "precio": 14.99,
+      "stock": 3,
+      "imagen": "tcats.jpg"
+    },
+    {
+      "id": "16",
+      "categoria": "Rock",
+      "nombre": "Songs for the deaf",
+      "artista": "Queens of Stone Age",
+      "precio": 9.99,
+      "stock": 2,
+      "imagen": "sftd.jpg"
+    },
+    {
+      "id": "17",
+      "categoria": "Rock",
+      "nombre": "Californication",
+      "artista": "Red Hot Chilli Peppers",
+      "precio": 9.99,
+      "stock": 4,
+      "imagen": "c.jpg"
+    },
+    {
+      "id": "18",
+      "categoria": "Rock",
+      "nombre": "Pablo Honey",
+      "artista": "Radiohead",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "ph.jpg"
+    },
+    {
+      "id": "19",
+      "categoria": "Rock",
+      "nombre": "Remain in Light",
+      "artista": "Talking Heads",
+      "precio": 9.99,
+      "stock": 1,
+      "imagen": "ril.jpg"
+    },
+    {
+      "id": "20",
+      "categoria": "Metal",
+      "nombre": "Master of Puppets",
+      "artista": "Metallica",
+      "precio": 9.99,
+      "stock": 2,
+      "imagen": "mop.jpg"
+    },
+    {
+      "id": "21",
+      "categoria": "Metal",
+      "nombre": "Rust in Peace",
+      "artista": "Megadeth",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "rip.jpg"
+    },
+    {
+      "id": "22",
+      "categoria": "Metal",
+      "nombre": "Toxicity",
+      "artista": "System of a Down",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "t.jpg"
+    },
+    {
+      "id": "23",
+      "categoria": "Metal",
+      "nombre": "Berserker",
+      "artista": "Beast in Black",
+      "precio": 9.99,
+      "stock": 3,
+      "imagen": "b.jpg"
+    },
+    {
+      "id": "24",
+      "categoria": "Metal",
+      "nombre": "Ride the Lightning",
+      "artista": "Metallica",
+      "precio": 9.99,
+      "stock": 2,
+      "imagen": "rtl.jpg"
+    },
+    {
+      "id": "25",
+      "categoria": "Metal",
+      "nombre": "The System Has Failed",
+      "artista": "Megadeth",
+      "precio": 9.99,
+      "stock": 1,
+      "imagen": "tshf.jpg"
+    },
+    {
+      "id": "26",
+      "categoria": "Pop",
+      "nombre": "Electra Heart",
+      "artista": "Marina",
+      "precio": 9.99,
+      "stock": 5,
+      "imagen": "eh.jpg"
+    },
+    {
+      "id": "27",
+      "categoria": "Pop",
+      "nombre": "Future Nostalgia",
+      "artista": "Dua Lipa",
+      "precio": 9.99,
+      "stock": 6,
+      "imagen": "fn.jpg"
+    },
+    {
+      "id": "28",
+      "categoria": "Pop",
+      "nombre": "Born this Way",
+      "artista": "Lady Gaga",
+      "precio": 9.99,
+      "stock": 4,
+      "imagen": "btw.jpg"
+    },
+    {
+      "id": "29",
+      "categoria": "Pop",
+      "nombre": "...Baby One More Time",
+      "artista": "Britney Spears",
+      "precio": 9.99,
+      "stock": 6,
+      "imagen": "bomt.jpg"
+    },
+    {
+      "id": "30",
+      "categoria": "Pop",
+      "nombre": "Oops!... I Did It Again",
+      "artista": "Britney Spears",
+      "precio": 9.99,
+      "stock": 4,
+      "imagen": "oidia.jpg"
+    }
+  ]
+}

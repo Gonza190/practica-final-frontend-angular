@@ -1,0 +1,18 @@
+<div class="flex flex-col items-center justify-center">
+  <h1 class="text-3xl py-1 px-1 font-bold text-center">Cesta</h1>
+  <h1 class="text-3xl py-1 px-1 font-bold text-center">
+    Total: {{ total.toFixed(2) }} €
+  </h1>
+  <app-order-modal (handleOrderModalEvent)="handleOrder()" />
+
+  <ng-container *ngFor="let product of content">
+    <app-small-card
+      [imagePath]="product.imagePath"
+      [title]="product.title"
+      [prize]="product.prize"
+      [stock]="product.stock"
+      [id]="product.id"
+      (deleteFromCartSmallCardEvent)="deleteFromCart($event)"
+    ></app-small-card>
+  </ng-container>
+</div>

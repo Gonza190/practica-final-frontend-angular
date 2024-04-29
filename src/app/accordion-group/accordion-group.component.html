@@ -1,0 +1,11 @@
+<div>
+  <h1 class="text-3xl py-5 px-1 font-bold">Productos</h1>
+
+  <div *ngFor="let category of categories; let i = index">
+    <app-accordion
+      [name]="category.nombre"
+      [products]="filterProducts()[category.nombre]"
+      (addToCartEventAccordion)="addToCart($event)"
+    />
+  </div>
+</div>
