@@ -6,7 +6,10 @@
         <app-category-modal (addCategoryEvent)="addCategory($event)" />
       </div>
       <div>
-        <app-product-modal />
+        <app-product-modal
+          [categories]="categories"
+          (addProductEvent)="addProductFromSubmit($event)"
+        />
       </div>
     </div>
 

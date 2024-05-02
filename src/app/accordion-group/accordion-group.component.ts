@@ -12,17 +12,12 @@ import { AccordionComponent } from '../accordion/accordion.component';
 export class AccordionGroupComponent {
   @Input() categories: any[] = [];
   @Input() products: any[] = [];
-  /*   @Input() addToCart: any; */
 
   @Output() addToCartEvent = new EventEmitter<number>();
 
   addToCart(id: number) {
     this.addToCartEvent.emit(id);
   }
-
-  /*   ngOnInit() {
-    this.filterProducts();
-  } */
 
   filterProducts() {
     let list: { [categoryName: string]: any[] } = {};

@@ -15,10 +15,16 @@ export class ProductModalComponent {
   modalOpen: boolean = false;
   productName: string = '';
   artist: string = '';
-  selectedCategory: string = '';
+  selectedCategory: string = 'Hip-Hop';
   price: number = 0;
   stock: number = 0;
   imageUrl: string = '';
+
+  @Output() addProductEvent = new EventEmitter<any>();
+
+  addCategory(formData: any) {
+    this.addProductEvent.emit(formData);
+  }
 
   openModal() {
     this.modalOpen = true;
@@ -38,17 +44,27 @@ export class ProductModalComponent {
       stock: this.stock,
       imageUrl: this.imageUrl,
     };
-    console.log('Formulario enviado:', formData);
 
     this.productName = '';
     this.artist = '';
-    this.selectedCategory = '';
+    this.selectedCategory = 'Hip-Hop';
     this.price = 0;
     this.stock = 0;
     this.imageUrl = '';
 
+    this.addCategory(formData);
+
     this.closeModal();
   }
 
-  handleImageChange(event: any) {}
+  handleImageChange(event: any) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = (e: any) => {
+      this.imageUrl = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  }
 }

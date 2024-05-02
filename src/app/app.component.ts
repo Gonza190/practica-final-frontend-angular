@@ -175,6 +175,17 @@ export class AppComponent {
     this.categories.push(newCategory);
   }
 
+  addProductFromSubmit(formData: any) {
+    this.addProduct(
+      formData.selectedCategory,
+      formData.productName,
+      formData.artist,
+      formData.price,
+      formData.stock,
+      formData.imageUrl
+    );
+  }
+
   addProduct(
     category: string,
     name: string,

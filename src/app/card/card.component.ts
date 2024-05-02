@@ -13,8 +13,7 @@ export class CardComponent {
   @Input() prize: number = 0.0;
   @Input() stock: number = 0;
   @Input() id: number = 0;
-  /*   @Input() addToCart: any;
-   */
+
   @Output() addToCartEventCard = new EventEmitter<number>();
 
   addToCart(id: number) {

@@ -12,7 +12,6 @@ import { CardComponent } from '../card/card.component';
 export class AccordionComponent {
   @Input() name: string = '';
   @Input() products: any[] = [];
-  /* @Input() addToCart: any; */
 
   @Output() addToCartEventAccordion = new EventEmitter<number>();
 

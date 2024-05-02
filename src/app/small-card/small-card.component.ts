@@ -21,4 +21,9 @@ export class SmallCardComponent {
   deleteFromCart(id: number) {
     this.deleteFromCartSmallCardEvent.emit(id);
   }
+
+  getImageUrl() {
+    console.log(this.imagePath);
+    return this.id < 30 ? this.IMG_URL + this.imagePath : this.imagePath;
+  }
 }
